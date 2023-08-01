@@ -18,14 +18,17 @@
   min-width: 388px;
 }
 
+.header__links-list-item {
+  font-size: 18px;
+  font-weight: normal;
+}
+
 .header__links-list-item_no-bullit {
   list-style: none;
   text-decoration: none;
 }
 
 .header__link {
-  font-size: 18px;
-  font-weight: normal;
   text-decoration: none;
   border-bottom: 1px solid #000;
 }
@@ -49,21 +52,11 @@
 }
 
 .address {
-  list-style: none;
   font-size: 18px;
   font-style: normal;
-  font-weight: normal;
   line-height: 1.35;
-  margin: 0;
   text-underline-offset: 4px;
-}
-
-.address:only-child {
-  border-bottom: 1px solid #000;
-}
-
-.address address {
-  font-style: normal;
+  max-width: 240px;
 }
 
 .header__address {
@@ -73,7 +66,7 @@
 
 .cover {
   position: relative;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -178,7 +171,9 @@
 
 .lots__card-list-item {
   position: relative;
-  flex: 1 0 430px;
+  flex-grow: 1;
+  width: 430px;
+  min-height: 450px;
 }
 
 .card-link {
@@ -198,15 +193,15 @@
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .card__title {
@@ -291,6 +286,10 @@
   text-underline-offset: 4px;
 }
 
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
 .footer__social-list {
   display: flex;
   justify-content: space-between;
@@ -302,16 +301,4 @@
   display: block;
   width: 48px;
   height: 48px;
-}
-
-.footer__social-list li:nth-child(1) .footer__social-icon {
-  background-image: url(/images/yt.svg);
-}
-
-.footer__social-list li:nth-child(2) .footer__social-icon {
-  background-image: url(/images/vk.svg);
-}
-
-.footer__social-list li:nth-child(3) .footer__social-icon {
-  background-image: url(/images/pinterest.svg);
 }
